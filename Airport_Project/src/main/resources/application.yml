@@ -1,0 +1,21 @@
+
+
+spring:
+  application:
+    name: airport
+  datasource:
+    password: password2
+    username: jamil
+    url: jdbc:postgresql://localhost:5432/airportDB
+
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        default-schema: public
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
